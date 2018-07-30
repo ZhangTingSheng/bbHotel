@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bb.hotel.androidquick.demo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="bb.hotel.androidquick.demo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.UIActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.AdapterActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.DialogActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.NetworkActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.FrameActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.DatabaseActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.TabActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.ToolbarActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.ToolsActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.PermissionActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.WebViewActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.HostActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.TaskActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.ArchitectureActivity" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.architecture3.WebViewJavascriptActivity" />
+        <activity
+            android:name="bb.hotel.androidquick.demo.ui.activity.DownloadActivity"
+            android:theme="@style/ProgressBarTheme" />
+        <activity android:name="bb.hotel.androidquick.demo.ui.activity.FragmentationActivity" />
+
+        <service android:name="bb.hotel.androidquick.demo.service.DownloadService" />
+    </application>
+
+</manifest>
